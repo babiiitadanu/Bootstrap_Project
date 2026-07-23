@@ -51,34 +51,37 @@
             <div class="container-fluid px-4">
 
                 <!-- Logo -->
-                <a class="navbar-brand fw-bolder fs-2 text-dark me-4" href="#">
+                <a class="navbar-brand fw-bolder fs-2 text-dark" href="#">
                     ECOMMERCE
                 </a>
 
-                <!-- Search -->
-                <form class="d-flex me-4" role="search">
-                    <div class="position-relative">
-                        <input class="form-control rounded-pill px-4 pe-5" type="search" placeholder="Search Here"
-                            aria-label="Search">
-                        <i
-                            class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 text-secondary"></i>
-                    </div>
-                </form>
-
-                <!-- Toggle -->
+                <!-- Toggle Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
                     <span class="navbar-toggler-icon"></span>
+
                 </button>
 
-                <!-- Menu -->
+                <!-- Search + Menu + Icons -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav ms-3 gap-4">
+                    <!-- Search -->
+                    <form class="d-flex me-lg-4 my-3 my-lg-0" role="search">
+                        <div class="position-relative">
+                            <input class="form-control rounded-pill px-4 pe-5" type="search" placeholder="Search Here">
+
+                            <i
+                                class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 text-secondary"></i>
+                        </div>
+                    </form>
+
+                    <!-- Menu -->
+                    <ul class="navbar-nav ms-lg-3 gap-lg-4">
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark fw-medium" href="#" role="button"
-                                data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-dark fw-medium" href="#" data-bs-toggle="dropdown">
                                 All Category
                             </a>
 
@@ -90,21 +93,17 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="#">
-                                Gift Cards
-                            </a>
+                            <a class="nav-link text-dark fw-medium" href="#">Gift Cards</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="#">
-                                Special Event
-                            </a>
+                            <a class="nav-link text-dark fw-medium" href="#">Special Event</a>
                         </li>
 
                     </ul>
 
                     <!-- Icons -->
-                    <div class="d-flex gap-4 ms-auto">
+                    <div class="d-flex gap-4 ms-lg-auto mt-3 mt-lg-0">
                         <i class="bi bi-heart fs-5"></i>
                         <i class="bi bi-person fs-5"></i>
                         <i class="bi bi-cart fs-5"></i>
@@ -115,7 +114,6 @@
             </div>
         </nav>
     </section>
-
     <section class="py-5">
         <div class="container">
 
@@ -290,92 +288,79 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
+<footer class="bg-dark text-white py-5">
+    <div class="container">
 
-            <div class="row">
+        <div class="row gy-5">
 
-                <!-- Left Section -->
-                <div class="col-lg-6 mb-5 mb-lg-0">
+            <!-- Left Section -->
+            <div class="col-12 col-lg-6">
 
-                    <h3 class="fw-bold mb-3">ECOMMERCE</h3>
+                <h3 class="fw-bold mb-3">ECOMMERCE</h3>
 
-                    <p class="text-secondary small w-75 lh-lg">
-                        Ecommerce is a free UI Kit from Paperpillar
-                        that you can use for your personal or
-                        commercial project.
-                    </p>
+                <p class="text-secondary small w-100 w-lg-75">
+                    Ecommerce is a free UI Kit from Paperpillar
+                    that you can use for your personal or
+                    commercial project.
+                </p>
 
-                    <div class="d-flex align-items-center gap-3 mt-4">
+                <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
 
-                        <input type="email" class="form-control bg-dark border-secondary  rounded-pill w-50 py-2 "
-                            placeholder="Type your email address">
+                    <input
+                        type="email"
+                        class="form-control bg-dark border-secondary rounded-pill w-50 "
+                        placeholder="Type your email address">
 
-                        <button class="btn btn-light rounded-pill px-4 py-2 fw-semibold">
-                            Submit
-                        </button>
-
-                    </div>
+                    <button class="btn btn-light rounded-pill px-4 py-2 align-self-start">
+                        Submit
+                    </button>
 
                 </div>
 
-                <!-- Right Section -->
-                <div class="col-lg-6">
+            </div>
 
-                    <div class="row">
+            <!-- Right Section -->
+            <div class="col-12 col-lg-6">
 
-                        <!-- Popular -->
-                        <div class="col-4">
-                            <h6 class="fw-bold text-uppercase mb-4">Popular</h6>
+                <div class="row gy-4">
 
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Shoes</a>
-                                </li>
-                                <li class="mb-2"><a href="#"
-                                        class="text-secondary text-decoration-none small">T-Shirt</a></li>
-                                <li class="mb-2"><a href="#"
-                                        class="text-secondary text-decoration-none small">Jackets</a></li>
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Hat</a>
-                                </li>
-                                <li><a href="#" class="text-secondary text-decoration-none small">Accessories</a></li>
-                            </ul>
-                        </div>
+                    <!-- Popular -->
+                    <div class="col-6 col-md-4">
+                        <h6 class="fw-bold text-uppercase mb-3">Popular</h6>
 
-                        <!-- Menu -->
-                        <div class="col-4">
-                            <h6 class="fw-bold text-uppercase mb-4">Menu</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Shoes</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">T-Shirt</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Jackets</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Hat</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none small">Accessories</a></li>
+                        </ul>
+                    </div>
 
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">All
-                                        Category</a></li>
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Gift
-                                        Cards</a></li>
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Special
-                                        Events</a></li>
-                                <li class="mb-2"><a href="#"
-                                        class="text-secondary text-decoration-none small">Testimonial</a></li>
-                                <li><a href="#" class="text-secondary text-decoration-none small">Blog</a></li>
-                            </ul>
-                        </div>
+                    <!-- Menu -->
+                    <div class="col-6 col-md-4">
+                        <h6 class="fw-bold text-uppercase mb-3">Menu</h6>
 
-                        <!-- Other -->
-                        <div class="col-4">
-                            <h6 class="fw-bold text-uppercase mb-4">Other</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">All Category</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Gift Cards</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Special Events</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Testimonial</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none small">Blog</a></li>
+                        </ul>
+                    </div>
 
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Tracking
-                                        Package</a></li>
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">FAQ</a>
-                                </li>
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">About
-                                        Us</a></li>
-                                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Contact
-                                        Us</a></li>
-                                <li><a href="#" class="text-secondary text-decoration-none small">Terms & Conditions</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <!-- Other -->
+                    <div class="col-12 col-md-4">
+                        <h6 class="fw-bold text-uppercase mb-3">Other</h6>
 
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Tracking Package</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">FAQ</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">About Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Contact Us</a></li>
+                            <li><a href="#" class="text-secondary text-decoration-none small">Terms & Conditions</a></li>
+                        </ul>
                     </div>
 
                 </div>
@@ -383,7 +368,9 @@
             </div>
 
         </div>
-    </footer>
+
+    </div>
+</footer>
 </body>
 
 </html>
