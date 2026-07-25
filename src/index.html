@@ -12,13 +12,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
     <script type="module" src="./assets/js/main.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container-fluid bg-white border-bottom d-none d-lg-block">
-            <div class="d-flex justify-content-between align-items-center px-4 py-3">
+            <div class="d-flex justify-content-between align-items-center py-3"
+                style="padding-left: 50px; padding-right: 50px;">
 
                 <!-- Left Side -->
                 <div class="d-flex gap-4">
@@ -28,27 +30,19 @@
 
                 <!-- Right Side -->
                 <nav class="d-flex gap-4">
-                    <a href="#" class="text-decoration-none text-secondary" aria-label="Tracking Package">
-                        Tracking Package
-                    </a>
-                    <a href="#" class="text-decoration-none text-secondary" aria-label="FAQ">
-                        FAQ
-                    </a>
-                    <a href="#" class="text-decoration-none text-secondary" aria-label="About Us">
-                        About Us
-                    </a>
-                    <a href="#" class="text-decoration-none text-secondary" aria-label="Contact Us">
-                        Contact Us
-                    </a>
+                    <a href="#" class="text-decoration-none text-secondary">Tracking Package</a>
+                    <a href="#" class="text-decoration-none text-secondary">FAQ</a>
+                    <a href="#" class="text-decoration-none text-secondary">About Us</a>
+                    <a href="#" class="text-decoration-none text-secondary">Contact Us</a>
                 </nav>
 
             </div>
         </div>
-
     </header>
+
     <section>
-        <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
-            <div class="container-fluid px-4">
+        <nav class="navbar navbar-expand-lg bg-white ">
+            <div class="container-fluid" style="padding-left:60px; padding-right:60px;">
 
                 <!-- Logo -->
                 <a class="navbar-brand fw-bolder fs-2 text-dark" href="#">
@@ -114,56 +108,54 @@
             </div>
         </nav>
     </section>
-    <section class="py-5">
-        <div class="container">
 
-            <div class="row g-3">
+    <section class="py-2">
+        <div class="container-fluid px-lg-5">
 
-                <!-- Left Big Card -->
-                <div class="col-lg-9">
+            <!-- Top Section -->
+            <div class="row g-4">
 
-                    <div class="card border-0 rounded-5 overflow-hidden text-white">
+                <!-- Left Hero -->
+                <div class="col-lg-8">
+                    <div class="card hero-card border-0 custom-radius overflow-hidden text-white">
 
-                        <img src="./assets/image/image 3.svg" class="img-fluid banner1 rounded-5 h-100 w-100">
-                        <div class="card-img-overlay d-flex flex-column justify-content-start  ps-5">
+                        <img src="./assets/image/image 3.svg" class="card-img h-100 w-100" alt="">
 
-                            <h1 class="display-3 fw-light lh-1 mt-2">
+                        <!-- Top padding removed -->
+                        <div class="card-img-overlay d-flex flex-column px-5 pt-3 pb-5">
+
+                            <h1 class="hero-title mb-3">
                                 Color of <br>
                                 Summer <br>
                                 Outfit
                             </h1>
 
-                            <p class="mt-3 mb-4">
-                                100+ Collections for your outfit
-                                <br>
-                                inspirations in this summer
+                            <p class="mb-4">
+                                100+ Collections for your outfit inspirations in this summer
                             </p>
 
                             <button class="btn btn-dark rounded-pill px-4 py-2 align-self-start">
-                                <small>VIEW COLLECTIONS</small>
+                                VIEW COLLECTIONS
                             </button>
 
                         </div>
 
                     </div>
-
                 </div>
 
-                <!-- Right Side -->
-                <div class="col-lg-3">
+                <!-- Right Cards -->
+                <div class="col-lg-4">
 
-                    <div class="row g-3">
+                    <div class="row g-4">
 
                         <div class="col-12">
+                            <div class="card side-card border-0 custom-radius overflow-hidden">
 
-                            <div class="card border-0 rounded-5 overflow-hidden">
+                                <img src="./assets/image/image 4.svg" class="card-img h-100 w-100" alt="">
 
-                                <img src="./assets/image/image 4.svg" class="card-img ban00ner1 w-100"
-                                    style="height:410px; object-fit:cover;">
+                                <div class="card-img-overlay p-4">
 
-                                <div class="card-img-overlay">
-
-                                    <h2 class="text-dark fw-normal lh-1">
+                                    <h2 class="side-title text-dark">
                                         Outdoor <br>
                                         Active
                                     </h2>
@@ -171,19 +163,16 @@
                                 </div>
 
                             </div>
-
                         </div>
 
                         <div class="col-12">
+                            <div class="card side-card border-0 custom-radius overflow-hidden">
 
-                            <div class="card border-0 rounded-5 overflow-hidden">
+                                <img src="./assets/image/image 5.svg" class="card-img h-100 w-100" alt="">
 
-                                <img src="./assets/image/image 5.svg" class="card-img banner1"
-                                    style="height:410px; object-fit:cover;">
+                                <div class="card-img-overlay p-4">
 
-                                <div class="card-img-overlay">
-
-                                    <h2 class="text-dark fw-normal lh-1">
+                                    <h2 class="side-title text-dark">
                                         Casual <br>
                                         Comfort
                                     </h2>
@@ -191,7 +180,6 @@
                                 </div>
 
                             </div>
-
                         </div>
 
                     </div>
@@ -200,53 +188,49 @@
 
             </div>
 
-            <!-- Bottom Row -->
-            <div class="row g-4 mt-4 align-items-center">
+            <!-- Bottom Section -->
+            <div class="row mt-2 g-4 align-items-stretch">
 
-                <!-- Left Content -->
-                <div class="col-lg-3">
+                <!-- Text -->
+                <div class="col-lg-3 d-flex">
 
-                    <div class="h-100 d-flex flex-column justify-content-center">
+                    <div class="my-auto">
 
-                        <h1 class="display-4 fw-normal lh-1 mb-4">
+                        <h1 class="bottom-title mb-4">
                             Casual <br>
                             Inspirations
                         </h1>
 
                         <p class="text-secondary mb-4">
-                            Our favorite combinations for casual
-                            outfit that can inspire you apply on
-                            your daily activity.
+                            Our favorite combinations for casual outfit that can inspire you apply on your daily
+                            activity.
                         </p>
 
-                        <button class="btn btn-outline-dark rounded-pill px-4 py-2 align-self-start">
-                            <small>BROWSE INSPIRATIONS</small>
+                        <!-- Border removed -->
+                        <button class="btn btn-outline-dark border-0 rounded-pill px-4 py-2">
+                            BROWSE INSPIRATIONS
                         </button>
 
                     </div>
 
                 </div>
 
-                <!-- Middle Card -->
-                <div class="col-lg-5">
+                <!-- Say it with Shirt -->
+                <div class="col-lg-4">
 
-                    <div class="card border-0 rounded-5 overflow-hidden position-relative">
+                    <div class="card middle-card border-0 custom-radius overflow-hidden">
 
-                        <img src="./assets/image/image 7.svg" class="card-img" style="height:330px; object-fit:cover;"
-                            alt="">
+                        <img src="./assets/image/image 7.svg" class="card-img h-100 w-100" alt="">
 
-                        <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+                        <!-- Text at Bottom -->
+                        <div class="card-img-overlay d-flex justify-content-between align-items-end p-4">
 
-                            <div class="d-flex justify-content-between align-items-end">
+                            <h2 class="text-white mb-0">
+                                Say it <br>
+                                with Shirt
+                            </h2>
 
-                                <h2 class="text-white fw-normal lh-1 mb-0">
-                                    Say it <br>
-                                    with Shirt
-                                </h2>
-
-                                <i class="bi bi-arrow-up-right fs-2 text-white"></i>
-
-                            </div>
+                            <i class="bi bi-arrow-up-right text-white fs-2"></i>
 
                         </div>
 
@@ -254,26 +238,22 @@
 
                 </div>
 
-                <!-- Right Card -->
-                <div class="col-lg-4">
+                <!-- Funky -->
+                <div class="col-lg-5">
 
-                    <div class="card border-0 rounded-5 overflow-hidden position-relative">
+                    <div class="card bottom-card border-0 custom-radius overflow-hidden">
 
-                        <img src="./assets/image/image 8.svg" class="card-img" style="height:330px; object-fit:cover;"
-                            alt="">
+                        <img src="./assets/image/image 8.svg" class="card-img h-100 w-100" alt="">
 
-                        <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+                        <!-- Text at Bottom -->
+                        <div class="card-img-overlay d-flex justify-content-between align-items-end p-4">
 
-                            <div class="d-flex justify-content-between align-items-end">
+                            <h2 class="text-white mb-0">
+                                Funky never <br>
+                                get old
+                            </h2>
 
-                                <h2 class="text-white fw-normal lh-1 mb-0">
-                                    Funky never <br>
-                                    get old
-                                </h2>
-
-                                <i class="bi bi-arrow-up-right fs-2 text-white"></i>
-
-                            </div>
+                            <i class="bi bi-arrow-up-right text-white fs-2"></i>
 
                         </div>
 
@@ -282,13 +262,12 @@
                 </div>
 
             </div>
-        </div>
 
         </div>
     </section>
 
     <section>
-        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap py-2 ">
 
             <!-- Heading -->
             <h2 class="fw-semibold mb-2 mb-lg-0">Trending</h2>
@@ -424,156 +403,553 @@
                 </div>
             </div>
 
-<!-- T-Shirt -->
-<div class="tab-pane fade" id="tshirt">
+            <!-- T-Shirt -->
+            <div class="tab-pane fade" id="tshirt">
 
-    <div class="row g-4">
+                <div class="row gx-2 gy-3">
 
-        <!-- Card 1 -->
-        <div class="col-lg-3 col-md-6">
-            <div class="product-card position-relative">
-                <img src="./assets/image/t-shirts1.jfif" class="img-fluid w-100">
-                <button class="heart-btn active">
-                    <i class="bi bi-heart"></i>
-                </button>
-            </div>
-
-            <h5 class="mt-3 mb-1">Classic Cotton T-Shirt</h5>
-            <span class="price">$225</span>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-lg-3 col-md-6">
-            <div class="product-card position-relative">
-                <img src="./assets/image/t-shirts2.jfif" class="img-fluid w-100">
-                <button class="heart-btn">
-                    <i class="bi bi-heart"></i>
-                </button>
-            </div>
-
-            <h5 class="mt-3 mb-1">Graphic Print T-Shirt</h5>
-            <span class="price">$125</span>
-        </div>
-
-        <!-- Card 3 (Big) -->
-        <div class="col-lg-6">
-            <div class="product-card position-relative">
-                <img src="./assets/image/t-shirts3.jfif" class="img-fluid w-100">
-                <button class="heart-btn">
-                    <i class="bi bi-heart"></i>
-                </button>
-            </div>
-
-            <h5 class="mt-3 mb-1">Oversized Streetwear T-Shirt</h5>
-            <span class="price">$199</span>
-        </div>
-
-        <!-- Card 4 (Big) -->
-        <div class="col-lg-6">
-            <div class="product-card position-relative">
-                <img src="./assets/image/t-shirts4.jfif" class="img-fluid w-100">
-                <button class="heart-btn">
-                    <i class="bi bi-heart"></i>
-                </button>
-            </div>
-
-            <h5 class="mt-3 mb-1">Premium Polo T-Shirt</h5>
-            <span class="price">$179</span>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="col-lg-3 col-md-6">
-            <div class="product-card position-relative">
-                <img src="./assets/image/t-shirts5.jfif" class="img-fluid w-100">
-                <button class="heart-btn">
-                    <i class="bi bi-heart"></i>
-                </button>
-            </div>
-
-            <h5 class="mt-3 mb-1">Slim Fit Crew Neck</h5>
-            <span class="price">$139</span>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="col-lg-3 col-md-6">
-            <div class="product-card position-relative">
-                <img src="./assets/image/t-shirts6.jfif" class="img-fluid w-100">
-                <button class="heart-btn">
-                    <i class="bi bi-heart"></i>
-                </button>
-            </div>
-
-            <h5 class="mt-3 mb-1">Sports Performance Tee</h5>
-            <span class="price">$159</span>
-        </div>
-
-    </div>
-
-</div>
-                <!-- Shorts -->
-                <div class="tab-pane fade" id="shorts">
-
-                    <div class="row g-4">
-
-                        <div class="col-lg-4">
-                            <!-- Shorts Card -->
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/t-shirts1.jfif" class="product-img">
+                            <button class="heart-btn active">
+                                <i class="bi bi-heart"></i>
+                            </button>
                         </div>
-
-                        <div class="col-lg-4">
-                            <!-- Shorts Card -->
-                        </div>
-
-                        <div class="col-lg-4">
-                            <!-- Shorts Card -->
-                        </div>
-
+                        <h5 class="mt-2 mb-1">Classic Cotton T-Shirt</h5>
+                        <span class="price">$225</span>
                     </div>
 
-                </div>
-
-                <!-- Hat -->
-                <div class="tab-pane fade" id="hat">
-
-                    <div class="row g-4">
-
-                        <div class="col-lg-3">
-                            <!-- Hat Card -->
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/t-shirts2.jfif" class="product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
                         </div>
-
-                        <div class="col-lg-3">
-                            <!-- Hat Card -->
-                        </div>
-
-                        <div class="col-lg-6">
-                            <!-- Hat Card -->
-                        </div>
-
+                        <h5 class="mt-2 mb-1">Graphic Print T-Shirt</h5>
+                        <span class="price">$125</span>
                     </div>
 
-                </div>
-
-                <!-- Jackets -->
-                <div class="tab-pane fade" id="jackets">
-
-                    <div class="row g-4">
-
-                        <div class="col-lg-4">
-                            <!-- Jacket Card -->
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/t-shirts3.jfif" class="product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
                         </div>
+                        <h5 class="mt-2 mb-1">Oversized Streetwear Tee</h5>
+                        <span class="price">$199</span>
+                    </div>
 
-                        <div class="col-lg-4">
-                            <!-- Jacket Card -->
+                    <!-- Card 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/t-shirts4.jfif" class="product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
                         </div>
+                        <h5 class="mt-2 mb-1">Premium Polo T-Shirt</h5>
+                        <span class="price">$179</span>
+                    </div>
 
-                        <div class="col-lg-4">
-                            <!-- Jacket Card -->
+                    <!-- Card 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/t-shirts5.jfif" class="product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
                         </div>
+                        <h5 class="mt-2 mb-1">Slim Fit Crew Neck</h5>
+                        <span class="price">$139</span>
+                    </div>
 
+                    <!-- Card 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/t-shirts6.jfif" class="product-img">
+                            <button class="heart-btn active">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-2 mb-1">Brazil Performance Tee</h5>
+                        <span class="price">$159</span>
                     </div>
 
                 </div>
 
             </div>
+
+            <!-- Shorts -->
+            <div class="tab-pane fade" id="shorts">
+
+                <div class="row gx-2 gy-3">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/shorts4.jfif" class="img-fluid product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-2 mb-1">Classic Cotton Shorts</h5>
+                        <span class="price">$89</span>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/shorts2.jfif" class="img-fluid product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-2 mb-1">Denim Casual Shorts</h5>
+                        <span class="price">$119</span>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/shorts3.webp" class="img-fluid product-img">
+                            <button class="heart-btn active">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-2 mb-1">Athletic Running Shorts</h5>
+                        <span class="price">$149</span>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/shorts6.webp" class="img-fluid product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-2 mb-1">Cargo Utility Shorts</h5>
+                        <span class="price">$159</span>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/shorts5.jfif" class="img-fluid product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-2 mb-1">Slim Fit Chino Shorts</h5>
+                        <span class="price">$129</span>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/shorts1.jpg" class="img-fluid product-img">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-2 mb-1">Sports Training Shorts</h5>
+                        <span class="price">$139</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Hat -->
+            <div class="tab-pane fade" id="hat">
+
+                <div class="row g-3">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/cap6.jfif" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Classic Baseball Cap</h5>
+                        <span class="price">$69</span>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/cap2.webp" class="img-fluid w-100">
+                            <button class="heart-btn active">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Premium Snapback Cap</h5>
+                        <span class="price">$89</span>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/cap3.webp" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Sports Running Cap</h5>
+                        <span class="price">$79</span>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/cap1.jfif" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Vintage Dad Cap</h5>
+                        <span class="price">$99</span>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/cap4.jfif" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Casual Cotton Cap</h5>
+                        <span class="price">$85</span>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/cap5.jfif" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Adjustable Trucker Cap</h5>
+                        <span class="price">$95</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Jackets -->
+            <div class="tab-pane fade" id="jackets">
+
+                <div class="row g-3">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/jacket1.webp" class="img-fluid w-100">
+                            <button class="heart-btn active">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Classic Denim Jacket</h5>
+                        <span class="price">$149</span>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/jacket2.jfif" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Leather Biker Jacket</h5>
+                        <span class="price">$249</span>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/jacket3.jfif" class="img-fluid w-100">
+                            <button class="heart-btn active">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Bomber Jacket</h5>
+                        <span class="price">$189</span>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/jacket4.jfif" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Winter Puffer Jacket</h5>
+                        <span class="price">$219</span>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/jacket5.jfif" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Hooded Casual Jacket</h5>
+                        <span class="price">$169</span>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product-card position-relative">
+                            <img src="./assets/image/jacket6.jfif" class="img-fluid w-100">
+                            <button class="heart-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                        <h5 class="mt-3 mb-1">Windbreaker Jacket</h5>
+                        <span class="price">$139</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container px-5 pt-3">
+
+        <div class="border-top"></div>
+
+        <div class="row align-items-center pt-4">
+
+
+            <div class="col-lg-3">
+                <h2 class="fw-light mb-0" style="font-size:48px; line-height:1;">
+                    Explore <br> by Colors
+                </h2>
+            </div>
+
+            <div class="col-lg-9">
+
+                <div class="d-flex flex-wrap gap-2">
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color RED-PASTEL rounded-circle me-2"></div>
+                        <span>RED PASTEL</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color LIME-GREEN rounded-circle me-2"></div>
+                        <span>LIME GREEN</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color NAVY-BLUE rounded-circle me-2"></div>
+                        <span>NAVY BLUE</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color CLEAN-WHITE border rounded-circle me-2"></div>
+                        <span>CLEAN WHITE</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color BLUE-Sky rounded-circle me-2"></div>
+                        <span>BLUE SKY</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color PURPLE rounded-circle me-2"></div>
+                        <span>PURPLE</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color PINK rounded-circle me-2"></div>
+                        <span>PINK</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color YELLOW rounded-circle me-2"></div>
+                        <span>YELLOW</span>
+                    </div>
+
+                    <div class="d-flex align-items-center border rounded-pill px-2 py-1">
+                        <div class="color DARK-GREEN rounded-circle me-2"></div>
+                        <span>DARK GREEN</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container px-5 pt-3">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner rounded-4">
+                        <div class="py-2 my-6 ps-2 ms-6">
+                            <h3 class="h3 text-white-50 ">Lorem, ipsum dolor.</h3>
+                            <span class="display-2 text-primary d-inline-block banner-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptates.
+                              </span>
+
+                            <p class="text-white-50 banner-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic totam, eos architecto assumenda delectus necessitatibus esse, exercitationem sunt nihil pariatur neque sit molestias? Ipsa dolor tempora nisi, provident illum molestias repudiandae asperiores laboriosam cupiditate?
+                               </p>
+                            <h4 class="h2 text-primary">Samantha William</h4>
+                            <p class="text-white-50">Fashion Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner-1 rounded-4 ">
+                        <div class="py-2 my-6 ps-2 ms-6">
+                            <h3 class="h3 text-white-50">What people said</h3>
+                            <span class="display-2 text-primary d-inline-block banner-content">Love the way
+                                they
+                                handle the order.</span>
+
+                            <p class="text-white-50 banner-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat rem, necessitatibus expedita accusantium ratione suscipit neque beatae obcaecati amet ab laboriosam reiciendis alias officia commodi iusto, culpa eaque aspernatur enim laudantium tenetur adipisci earum.
+                                .</p>
+                            <h4 class="h2 text-primary">Samantha William</h4>
+                            <p class="text-white-50">Fashion Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="banner-2 rounded-4 ">
+                        <div class="py-2 my-6 ps-2 ms-6">
+                            <h3 class="h3 text-white-50">Lorem ipsum dolor sit.</h3>
+                            <span class="display-2 text-primary d-inline-block banner-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At beatae quae corporis est sit facere, eligendi, earum velit officia et repellendus nam porro nisi itaque .</span>
+
+                            <p class="text-white-50 banner-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quam quod excepturi illo totam cum quia rem iste itaque, sint accusantium tempora officia deserunt saepe. Voluptatibus numquam optio exercitationem repudiandae obcaecati eum sunt hic.</p>
+                            <h4 class="h2 text-primary">Samantha William</h4>
+                            <p class="text-white-50">Fashion Enthusiast</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="container px-5 pt-3">
+        <div class="border-top"></div>
+        <div>
+            <h3 class="h5 banner-content">Why you'll love to shop on our website</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="icon-content bg-secondary d-flex justify-content-center align-items-center rounded-pill">
+                    <i class="bi bi-heart "></i>
+                </div>
+                <h4 class="h3">Take care with love</h4>
+                <p>We take care your package with full of attention and of course full of love. We want to make sure
+                    you'll receive your package like you receive your birthday gift.</p>
+            </div>
+            <div class="col-lg-4">
+
+                <div class="icon-content bg-secondary d-flex justify-content-center align-items-center rounded-pill">
+                    <i class="bi bi-telephone-fill"></i>
+                </div>
+                <h4 class="h3">Friendly Customer Service</h4>
+                <p>You do not need to worry when you want to check your package. We will always answer whatever your
+                    questions. Just click on the chat icon and we will talk.</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="icon-content bg-secondary d-flex justify-content-center align-items-center rounded-pill">
+                    <i class="bi bi-arrow-repeat"></i>
+                </div>
+                <h4 class="h3">Refund Process</h4>
+                <p>Refund is a such bad experience and we don't want that thing happen to you. But when it's happen
+                    we will make sure you will through smooth and friendly process.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-5 py-5">
+
+        <div class="border-top mb-5"></div>
+
+        <h2 class="h4 mb-4">From The Blog</h2>
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <img src="./assets/image/Group 405.png" class="img-fluid rounded-4 w-100" alt="Blog Image">
+            </div>
+
+            <div class="col-lg-6">
+
+                <h3 class="h5 mb-3">
+                    How to combine your daily outfit to look fresh and cool.
+                </h3>
+
+                <p class="text-secondary mb-4">
+                    Maybe you don't need to buy new clothes to have a nice, cool,
+                    fresh-looking outfit every day. Maybe what you need is to
+                    combine your clothes collection. Mix and match is the key.
+                </p>
+
+                <button class="btn btn-outline-secondary rounded-pill px-4 py-2">
+                    READ MORE
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container-fluid px-5 py-5">
+
+        <div class="border-top mb-5"></div>
+
+        <h2 class="h4 mb-4">From The Blog</h2>
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-6">
+                <img src="./assets/image/Group 405.png" class="img-fluid rounded-4 w-100" alt="Blog Image">
+            </div>
+
+            <div class="col-lg-6">
+
+                <h3 class="h5 mb-3">
+                    How to combine your daily outfit to look fresh and cool.
+                </h3>
+
+                <p class="text-secondary mb-4">
+                    Maybe you don't need to buy new clothes to have a nice, cool,
+                    fresh-looking outfit every day. Maybe what you need is to
+                    combine your clothes collection. Mix and match is the key.
+                </p>
+
+                <button class="btn btn-outline-secondary rounded-pill px-4 py-2">
+                    READ MORE
+                </button>
+            </div>
+
+        </div>
+
     </section>
 
     <footer class="bg-dark text-white py-5">
@@ -670,6 +1046,24 @@
 
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+    </script>
 </body>
 
 </html>
