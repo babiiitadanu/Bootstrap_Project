@@ -56,7 +56,7 @@
 }
 
 h5{
-    font-size:60px;
+    font-size:45px;
     font-weight:400;
 }
 
@@ -124,6 +124,12 @@ h5{
     font-size:42px;
     font-weight:300;
     line-height:1;
+}
+
+.text{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
 }
 
 .card-img-overlay{
@@ -235,11 +241,12 @@ h5{
 .order-banner,
 .order-banner-1,
 .order-banner-2{
-    width:100%;
-    height:500px;
+    min-height:636px;
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+    border-radius:30px !important;
+    overflow:hidden;
 }
 
 .order-banner{
@@ -271,4 +278,31 @@ h5{
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -1px;
+}
+
+.icon-circle{
+    width:80px;
+    height:80px;
+}
+
+h2{
+    white-space: nowrap;
+}
+
+.middle-card,
+.bottom-card{
+    height:300px;
+    position:relative;
+    overflow:hidden;
+    border-radius:30px;
+}
+
+.middle-card{
+    background:url("./assets/image/image 7.svg") no-repeat center;
+    background-size:120% auto;
+}
+
+.bottom-card{
+    background:url("./assets/image/image 8.svg") no-repeat center;
+    background-size:120% auto;
 }
