@@ -56,8 +56,8 @@
 }
 
 h5{
-    font-size:22px;
-    font-weight:500;
+    font-size:60px;
+    font-weight:400;
 }
 
 .price{
@@ -199,6 +199,9 @@ h5{
  .DARK-GREEN {
      background-color: $DARK-GREEN;
  }
+.backgroundcolor:hover {
+    background-color: #000 ;
+} 
 
  .color-d {
      display: flex;
@@ -220,9 +223,18 @@ h5{
     height:560px;
 }
 
-.banner,
-.banner-1,
-.banner-2{
+.swiper{
+    width:100%;
+    height:100%;
+}
+
+.swiper-slide{
+    height:550px;
+}
+
+.order-banner,
+.order-banner-1,
+.order-banner-2{
     width:100%;
     height:500px;
     background-size:cover;
@@ -230,20 +242,18 @@ h5{
     background-repeat:no-repeat;
 }
 
-.banner{
+.order-banner{
     background-image:url("../image/image\ 16.svg");
 }
 
-.banner-1{
-    background-image:url("../image/image\ 16.svg");
+.order-banner-1{
+    background-image:url("../image/fashion2.jfif");
 }
 
-.banner-2{
-    background-image:url("../image/image\ 16.svg");
+.order-banner-2{
+    background-image:url("../image/fashion1.jfif");
 }
-.banner-content{
-    max-width:590px;
-}
+
 .icon-content{
     width: 120px;
     height: 120px;
@@ -251,4 +261,14 @@ h5{
 .icon-content i{
     font-size: 32px;
     color: #fff;
+}
+.section-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.product-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1px;
 }
